@@ -12,15 +12,7 @@ console.log(monday, tue, wed, thu, fri);
 //위와 같이 필요한 데이터를 나열할 수 있지만 비효율적.
 //array는 여러 string을 하나로 묶는 것이니 이를 사용한다.
 
-const daysOfWeek = [
-  'mon',
-  'tue',
-  'wed',
-  'thu',
-  'fri',
-  'sat',
-  'sun',
-];
+const daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 console.log(daysOfWeek);
 
 //object: 각 value에 이름을 줄 수 있다는 점이 array와 다른 점.
@@ -30,11 +22,7 @@ const nicoInfo = {
   age: 33,
   gender: 'male',
   isHandsome: true,
-  favMovies: [
-    'along the gods',
-    'LOTR',
-    'Oldboy',
-  ],
+  favMovies: ['along the gods', 'LOTR', 'Oldboy'],
   favFood: [
     {
       name: 'kimchi',

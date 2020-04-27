@@ -14,37 +14,24 @@ function sayHello(potato) {
 sayHello('heejin');
 
 function sayHello2(name, age) {
-  console.log(
-    'hello!',
-    name,
-    'you have',
-    age,
-    'years of age.'
-  );
+  console.log('hello!', name, 'you have', age, 'years of age.');
 }
 
 sayHello2('heejin', 15);
 
 //템플릿 리터럴
 function sayHello3(name, age) {
-  console.log(
-    `hello ${name} you are ${age} years old`
-  );
+  console.log(`hello ${name} you are ${age} years old`);
 }
 
 sayHello3('heejin', 15);
 
 function sayHello4(name, age) {
-  console.log(
-    `hello ${name} you are ${age} years old`
-  );
+  console.log(`hello ${name} you are ${age} years old`);
 }
 
 //여기서 선언한 greeHeejin 변수는 sayHello4 함수의 리턴 값과 같다.
-const greetHeejin = sayHello4(
-  'heejin',
-  14
-);
+const greetHeejin = sayHello4('heejin', 14);
 console.log(greetHeejin);
 
 //이 상태에서는 undefined.
@@ -80,14 +67,8 @@ const calculatorAll = {
 const calculatorResult = {
   plus: calculatorAll.plus(5, 5),
   minus: calculatorAll.minus(5, 5),
-  multiply: calculatorAll.multiply(
-    5,
-    5
-  ),
-  division: calculatorAll.division(
-    5,
-    5
-  ),
+  multiply: calculatorAll.multiply(5, 5),
+  division: calculatorAll.division(5, 5),
   power: calculatorAll.power(5, 5),
 };
 
