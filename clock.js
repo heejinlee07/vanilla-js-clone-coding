@@ -12,11 +12,26 @@ function getTime() {
   const minutes = date.getMinutes();
   const hours = date.getHours();
   const seconds = date.getSeconds();
-  clockTitle.innerText = `${hours}:${minutes}:${seconds}`;
+  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
+    minutes < 10 ? `0${minutes}` : minutes
+  }:${seconds < 10 ? `0${seconds}` : seconds}`;
 }
+
+/**
+ * NOTE:
+ * setInterval(실행할 함수, 그 함수를 실행하고 싶은 시간(간격))
+ * setInterval(fn, 1000)
+ * function sayHi() {
+  console.log('say hi');
+}
+
+setInterval(sayHi, 3000);
+*
+*/
 
 function init() {
   getTime();
+  setInterval(getTime, 1000);
 }
 
 init();
